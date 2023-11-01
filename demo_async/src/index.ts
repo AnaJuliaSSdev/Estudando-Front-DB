@@ -17,3 +17,12 @@ async function main() {
 
 main();
 
+
+//outro exemplo
+const promise = new Promise((resolve, reject) => {
+    throw new Error('a');
+});
+
+promise.catch((error) => {
+    console.error(error); // Isso imprimirá 'Error: a' no console.
+});
